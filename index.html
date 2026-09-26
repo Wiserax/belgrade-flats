@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Наш дом в Белграде">
+<meta property="og:description" content="Квартиры на месяц рядом с Hilton: фото, цены и оценка интерьера. Ставь ♥ и отправь выбор.">
+<meta property="og:image" content="https://wiserax.github.io/belgrade-flats/img/m5425646628352_0.jpg">
+<meta property="og:url" content="https://wiserax.github.io/belgrade-flats/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+<title>Квартиры в Белграде</title>
+<meta name="description" content="Квартиры на месяц рядом с Hilton Belgrade: фото, цены, оценка интерьера, рабочий стол и фен. Ставь ♥ и отправь выбор.">
+<meta name="theme-color" content="#F3F5F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1412" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F3F5F2; --surface:#FFFFFF; --sunk:#E8EDE9; --ink:#16201C; --muted:#5B6964; --line:#DCE3DF;
+  --accent:#1E6B58; --accent-soft:#DCEEE7; --accent-ink:#FFFFFF;
+  --heart:#D8456B; --heart-soft:#FBE4EB;
+  --good:#1E6B58; --good-bg:#DCEEE7; --warn:#8F5E0A; --warn-bg:#F8ECD2; --bad:#A23B33; --bad-bg:#F7E3E0;
+  --map-bg:#E6ECE8; --map-ring:#CBD6D0; --pin:#16201C; --hilton:#D8456B; --party:#6E4BC4;
+  --shadow:0 1px 2px rgba(22,32,28,.05),0 12px 32px -18px rgba(22,32,28,.28);
+  --display:"Unbounded",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --body:"Golos Text",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:22px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1412; --surface:#161F1C; --sunk:#111916; --ink:#E7EEEA; --muted:#95A49E; --line:#25322D;
+    --accent:#71D3B3; --accent-soft:#15302A; --accent-ink:#0E1412;
+    --heart:#FF7C9C; --heart-soft:#3A1823;
+    --good:#71D3B3; --good-bg:#15302A; --warn:#F0C46A; --warn-bg:#33280F; --bad:#F29C92; --bad-bg:#3A1C19;
+    --map-bg:#121B18; --map-ring:#23332D; --pin:#E7EEEA; --hilton:#FF7C9C; --party:#B39BFF;
+    --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 34px -18px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1412; --surface:#161F1C; --sunk:#111916; --ink:#E7EEEA; --muted:#95A49E; --line:#25322D;
+  --accent:#71D3B3; --accent-soft:#15302A; --accent-ink:#0E1412;
+  --heart:#FF7C9C; --heart-soft:#3A1823;
+  --good:#71D3B3; --good-bg:#15302A; --warn:#F0C46A; --warn-bg:#33280F; --bad:#F29C92; --bad-bg:#3A1C19;
+  --map-bg:#121B18; --map-ring:#23332D; --pin:#E7EEEA; --hilton:#FF7C9C; --party:#B39BFF;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 14px 34px -18px rgba(0,0,0,.7);
+}
+img{max-width:100%}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 var(--body);margin:0;overflow-x:hidden}
+a{color:var(--accent)}
+h1,h2,h3{margin:0;text-wrap:balance}
+h2{font:600 clamp(22px,6vw,30px)/1.12 var(--display);letter-spacing:-.02em}
+h3{font:600 19px/1.25 var(--body);letter-spacing:-.01em}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+button{font:inherit;color:inherit}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:10px}
+
+/* hero */
+.hero{position:relative;margin:0 0 8px;min-height:min(78vh,620px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;border-radius:0 0 var(--r) var(--r);background:#1c2a25}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,16,14,.05) 20%,rgba(10,16,14,.35) 55%,rgba(10,16,14,.86) 100%)}
+.hero .in{position:relative;z-index:1;width:100%;max-width:720px;margin:0 auto;padding:0 18px 26px}
+.hero .eyebrow{color:rgba(255,255,255,.8)}
+.hero h1{font:700 clamp(38px,11vw,64px)/.98 var(--display);letter-spacing:-.035em;margin:10px 0 12px}
+.hero p{margin:0;max-width:34ch;font-size:16.5px;color:rgba(255,255,255,.9)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pill{font:500 13px/1.2 var(--body);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.pill b{font-weight:700}
+
+section{margin-top:40px}
+.sh{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.sh p{margin:0;color:var(--muted);font-size:15px}
+
+/* picks carousel */
+.rail{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 14px;margin:0 -16px;scrollbar-width:none;overscroll-behavior-x:contain}
+.rail::-webkit-scrollbar{display:none}
+.pick{flex:0 0 min(84%,420px);scroll-snap-align:center;background:var(--surface);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;border:1px solid var(--line)}
+.pick .ph{position:relative}
+.pick .ph img{width:100%;aspect-ratio:4/3.1;object-fit:cover;display:block}
+.pick .pb{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pick .lab{font:700 11.5px/1 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.pick p{margin:0;font-size:14.5px;color:var(--ink)}
+.pick .go{margin-top:auto}
+
+/* controls */
+.controls{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 12px;margin:0 -16px;position:sticky;top:0;z-index:5;background:linear-gradient(var(--bg) 78%,transparent);padding-top:calc(env(safe-area-inset-top,0px) + 8px)}
+.controls::-webkit-scrollbar{display:none}
+.chipbtn{flex:0 0 auto;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:9px 14px;font:500 14px/1 var(--body);cursor:pointer;white-space:nowrap}
+.chipbtn[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.count{color:var(--muted);font-size:13px;margin:-4px 0 12px}
+
+/* cards */
+.list{display:flex;flex-direction:column;gap:18px}
+.card{background:var(--surface);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);scroll-margin-top:70px}
+.card.flash{outline:3px solid var(--accent);outline-offset:2px}
+.gal{position:relative;background:var(--sunk)}
+.strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.strip img{flex:0 0 100%;width:100%;aspect-ratio:4/3;object-fit:cover;scroll-snap-align:start;display:block;cursor:zoom-in}
+.dots{position:absolute;left:0;right:0;bottom:10px;display:flex;justify-content:center;gap:5px;pointer-events:none}
+.dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55);transition:width .2s,background .2s}
+.dots i.on{width:16px;border-radius:3px;background:#fff}
+.score{position:absolute;left:10px;top:10px;display:flex;align-items:baseline;gap:6px;padding:7px 11px;border-radius:999px;color:#fff;background:rgba(12,18,16,.62);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font:500 12.5px/1 var(--body)}
+.score b{font:700 17px/1 var(--display)}
+.score.hi{background:rgba(30,107,88,.92)}
+.heart{position:absolute;right:10px;top:10px;width:44px;height:44px;border-radius:50%;border:0;display:grid;place-items:center;background:rgba(255,255,255,.92);color:#16201C;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.heart svg{width:22px;height:22px;transition:transform .18s}
+.heart[aria-pressed="true"]{background:var(--heart);color:#fff}
+.heart[aria-pressed="true"] svg{transform:scale(1.08)}
+.body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:12px}
+.area{font:600 12px/1.2 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px}
+.price b{font:700 30px/1 var(--display);letter-spacing:-.03em}
+.price span{color:var(--muted);font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:600 12.5px/1 var(--body);padding:7px 10px;border-radius:999px;background:var(--sunk);color:var(--ink)}
+.chip.good{background:var(--good-bg);color:var(--good)}
+.chip.warn{background:var(--warn-bg);color:var(--warn)}
+.chip.bad{background:var(--bad-bg);color:var(--bad)}
+.vibe{margin:0;font-size:15.5px;line-height:1.45}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;margin:0;padding:12px 14px;background:var(--sunk);border-radius:16px}
+.facts div{display:flex;flex-direction:column;gap:2px}
+.facts dt{font-size:12px;color:var(--muted)}
+.facts dd{margin:0;font-weight:600;font-size:14.5px;font-variant-numeric:tabular-nums}
+.pc{display:flex;flex-direction:column;gap:6px;font-size:14.5px}
+.pc div{display:flex;gap:8px}
+.pc .p::before{content:"+";color:var(--good);font-weight:700}
+.pc .c::before{content:"–";color:var(--bad);font-weight:700}
+.feat{font-size:13.5px;color:var(--muted)}
+.notes{margin:0;font-size:14.5px;color:var(--muted)}
+.go{display:flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;font-weight:600;font-size:15px;border-radius:14px;padding:13px 14px;background:var(--ink);color:var(--bg)}
+.go.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.more{border:1px solid var(--line);background:transparent;border-radius:14px;padding:13px;font-weight:600;cursor:pointer;width:100%}
+
+/* map */
+.mapbox{background:var(--surface);border-radius:var(--r);padding:12px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.mapbox svg{display:block;width:100%;height:auto;border-radius:14px;background:var(--map-bg)}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin:10px 4px 2px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.pin{cursor:pointer}
+.pin circle{fill:var(--surface);stroke:var(--pin);stroke-width:1.6}
+.pin text{font:700 10px var(--body);fill:var(--pin);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.pin.fav circle{fill:var(--heart);stroke:var(--heart)}
+.pin.fav text{fill:#fff}
+
+.tips{display:grid;gap:10px}
+.tip{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.tip b{display:block;margin-bottom:3px}
+.tip span{color:var(--muted);font-size:14.5px}
+
+footer{margin:40px 0 0;padding:20px 0 calc(110px + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+
+/* favourites bar + sheet */
+.favbar{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;pointer-events:none}
+.favbar .in{pointer-events:auto;display:flex;align-items:center;gap:10px;width:100%;max-width:560px;background:var(--ink);color:var(--bg);border-radius:20px;padding:10px 10px 10px 16px;box-shadow:0 14px 40px -12px rgba(0,0,0,.45)}
+.favbar .n{flex:1;font-weight:600;font-size:15px}
+.favbar button{border:0;border-radius:14px;padding:11px 16px;font-weight:700;background:var(--heart);color:#fff;cursor:pointer}
+.sheet{position:fixed;inset:0;z-index:30;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.45)}
+.sheet .panel{width:100%;max-width:600px;max-height:86vh;overflow:auto;background:var(--surface);color:var(--ink);border-radius:24px 24px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px))}
+.sheet .grab{width:40px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 14px}
+.sheet ol{margin:12px 0 16px;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.sheet li span{color:var(--muted);font-size:14px}
+.sheet .acts{display:grid;gap:10px}
+.sheet .acts a,.sheet .acts button{display:block;text-align:center;text-decoration:none;border:0;border-radius:14px;padding:14px;font-weight:700;font-size:16px;cursor:pointer}
+.tg{background:#2AABEE;color:#fff}.wa{background:#25D366;color:#073B1D}
+.cp{background:var(--sunk);color:var(--ink)}
+.close{background:transparent;color:var(--muted)!important}
+#sendtext{width:100%;min-height:120px;border:1px solid var(--line);border-radius:12px;padding:10px;font:14px/1.4 var(--body);background:var(--sunk);color:var(--ink);margin-bottom:10px}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:40;background:#000;display:flex;flex-direction:column}
+.lb .strip{flex:1;height:100%}
+.lb .strip img{aspect-ratio:auto;height:100%;object-fit:contain;cursor:default;background:#000}
+.lb .top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:calc(env(safe-area-inset-top,0px) + 10px) 14px 10px;color:#fff;font:600 14px var(--body);z-index:1;background:linear-gradient(rgba(0,0,0,.55),transparent)}
+.lb .x{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.16);color:#fff;font-size:22px;cursor:pointer}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media (min-width:760px){.list{display:grid;grid-template-columns:1fr 1fr;gap:18px}.wrap{max-width:1040px}.hero .in{max-width:1040px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="img/m5425646628352_0.jpg" alt="Гостиная в квартире на Дорчоле">
+  <div class="in">
+    <div class="eyebrow">Белград · с 28 сентября · на месяц</div>
+    <h1>Наш дом в&nbsp;Белграде</h1>
+    <p>Квартиры рядом с конференцией: фото, цены и честная оценка интерьера. Ставь ♥ тем, что нравятся, и отправь свой выбор.</p>
+    <div class="pills">
+      <span class="pill">Прилёт <b>28 сент., 03:00</b></span>
+      <span class="pill">Конференция <b>Hilton</b></span>
+      <span class="pill">Вечеринка <b>Mama Shelter</b></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="best">
+    <div class="sh">
+      <div class="eyebrow">Коротко</div>
+      <h2>Лучшие варианты</h2>
+      <p>Листай вбок. Сначала пара ночей в квартире посуточно, пока смотрим варианты на месяц.</p>
+    </div>
+    <div class="rail" id="rail"></div>
+  </section>
+
+  <section id="month">
+    <div class="sh">
+      <div class="eyebrow">Аренда на месяц · от $700</div>
+      <h2>Все квартиры на месяц</h2>
+      <p>Оценка «красиво» — по всем фото каждой квартиры, от 1 до 10. Цены от хозяев, без агентства.</p>
+    </div>
+    <div class="controls" role="toolbar" aria-label="Сортировка и фильтры">
+      <button type="button" class="chipbtn" id="s-nice" data-k="nice" aria-pressed="true">Красивее</button>
+      <button type="button" class="chipbtn" id="s-price" data-k="price" aria-pressed="false">Дешевле</button>
+      <button type="button" class="chipbtn" id="s-near" data-k="dH" aria-pressed="false">Ближе к Hilton</button>
+      <button type="button" class="chipbtn" id="f-desk" aria-pressed="false">Со столом</button>
+      <button type="button" class="chipbtn" id="f-fav" aria-pressed="false">♥ Мои</button>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section id="nights">
+    <div class="sh">
+      <div class="eyebrow">Посуточно</div>
+      <h2>Первые ночи</h2>
+      <p>На 2–4 ночи после прилёта, пока смотрим квартиры. У всех этих вариантов в объявлении указан фен.</p>
+    </div>
+    <div class="list" id="slist"></div>
+  </section>
+
+  <section id="map">
+    <div class="sh">
+      <div class="eyebrow">Где это</div>
+      <h2>На карте</h2>
+      <p>Номера — как на карточках. Нажми на точку, чтобы открыть квартиру. Выбранные ♥ подсвечиваются.</p>
+    </div>
+    <div class="mapbox"><svg id="svgmap" viewBox="0 0 340 360" role="img" aria-label="Расположение квартир относительно Hilton и Mama Shelter"></svg>
+      <div class="legend"><span><i style="background:var(--hilton)"></i>Hilton</span><span><i style="background:var(--party)"></i>Mama Shelter</span><span><i style="background:var(--surface);border:1.5px solid var(--pin)"></i>Квартира</span><span><i style="background:var(--heart)"></i>♥ выбрана</span></div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="sh"><div class="eyebrow">Как это устроено</div><h2>Что важно знать</h2></div>
+    <div class="tips">
+      <div class="tip"><b>Хозяева, без агентства</b><span>Платим за месяц + залог (обычно ещё один месяц, возвращается) + коммуналка €50–100.</span></div>
+      <div class="tip"><b>Сначала смотрим вживую</b><span>Деньги — только после просмотра квартиры и паспорта хозяина.</span></div>
+      <div class="tip"><b>Регистрация</b><span>Иностранцев регистрируют в полиции в течение суток («бели картон»). Это делает хозяин.</span></div>
+    </div>
+  </section>
+
+  <footer>
+    Фото и цены — из объявлений на Halo Oglasi, проверено 26 сентября 2026. Объявления быстро уходят, так что если чего-то уже нет, похожие варианты обычно находятся. Расстояния — по прямой, время пешком примерное.
+  </footer>
+</main>
+
+<div class="favbar" id="favbar" hidden><div class="in"><span class="n" id="favn"></span><button type="button" id="open-send">Отправить</button></div></div>
+
+<div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheet-h">
+  <div class="panel">
+    <div class="grab"></div>
+    <h3 id="sheet-h">Мой выбор</h3>
+    <ol id="favlist"></ol>
+    <textarea id="sendtext" readonly aria-label="Текст для отправки"></textarea>
+    <div class="acts">
+      <a class="tg" id="tg" href="#" target="_blank" rel="noopener">Отправить в Telegram</a>
+      <a class="wa" id="wa" href="#" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+      <button type="button" class="cp" id="copy">Скопировать текст</button>
+      <button type="button" class="close" id="close-send">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Фото">
+  <div class="top"><span id="lbc"></span><button type="button" class="x" id="lbx" aria-label="Закрыть">×</button></div>
+  <div class="strip" id="lbs"></div>
+</div>
+
+<script>
+const MONTHLY = [{"id": "5425647678080", "title": "Квартира в старом доме, Майке Евросиме", "area": "Стари-Град · Скупщина", "rooms": "2 комнаты", "floor": "высокий первый из 4", "sleeps": "", "priceNote": "", "notes": "Большая квартира в старом доме. Гостиная выходит на улицу, спальня и кухня — в тихий двор. Ковры и диваны прошли химчистку. Помесячная оплата плюс депозит. Только для некурящих.", "feat": ["Кондиционер", "Центральное отопление", "Интернет"], "vibe": "Просторная «бабушкина» гостиная: люстры, диваны с узором, ковры, тёмное дерево", "highlights": "61 м², высокие потолки, паркет ёлочкой, отдельная столовая", "concerns": "Старая мебель; нет фото спальни, кухни, ванной; низко, решётки на окнах", "price": 650, "extra": 0, "m2": 61, "dH": 0.94, "dM": 1.1, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/izdaje-se-stan-u-majke-jevrosime/5425647678080", "photos": ["img/m5425647678080_0.jpg", "img/m5425647678080_1.jpg", "img/m5425647678080_2.jpg", "img/m5425647678080_3.jpg", "img/m5425647678080_4.jpg", "img/m5425647678080_5.jpg"], "flags": ["now"], "nice": 4, "desk": "table", "bed": "unclear", "light": "medium", "best": 1, "lat": 44.812286, "lng": 20.468725, "n": 10}, {"id": "5425647624758", "title": "Ремонт, 60 м² с террасой, верхний Дорчол", "area": "Стари-Град · Дорчол", "rooms": "2 комнаты", "floor": "7 из 8", "sleeps": "", "priceNote": "", "notes": "После ремонта, есть лифт, кондиционер, терраса и видеодомофон. Можно въезжать сразу.", "feat": ["Кондиционер", "Лифт", "Терраса", "Интернет"], "vibe": "Аккуратная, свежеобставленная, но безликая квартира; новые серые диваны, старая кухня", "highlights": "Новые диваны и шкаф, паркет, простой обновлённый санузел с ванной", "concerns": "Устаревшая кухня «под вишню», кровати на фото нет, размытые снимки", "price": 600, "extra": 0, "m2": 60, "dH": 2.47, "dM": 1.12, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/dorcol-centar-stan-za-izdavanje/5425647624758", "photos": ["img/m5425647624758_0.jpg", "img/m5425647624758_1.jpg", "img/m5425647624758_2.jpg", "img/m5425647624758_3.jpg", "img/m5425647624758_4.jpg", "img/m5425647624758_5.jpg"], "flags": ["now"], "nice": 5, "desk": "table", "bed": "sofa-bed", "light": "medium", "best": 1, "lat": 44.826161, "lng": 20.464421, "n": 6}, {"id": "5425647709894", "title": "Новостройка, 2 комнаты на тихой улице", "area": "Врачар · Южный бульвар", "rooms": "2 комнаты", "floor": "4 из 5", "sleeps": "", "priceNote": "", "notes": "Дом сдан 3 года назад, всё это время здесь жила одна семья. Свободна с 1 октября. Объявление от хозяина, без агентств.", "feat": ["Кондиционер", "Лифт", "Терраса", "Интернет"], "vibe": "Светлая современная двушка в новостройке, пока в ней живёт семья", "highlights": "Современная кухня, ванная «под мрамор», мягкая двуспальная кровать, балкон, 60 м²", "concerns": "Вещи хозяев, детские игрушки, магниты; тонкая трещина на стене; старые споты", "price": 650, "extra": 0, "m2": 60, "dH": 1.77, "dM": 3.36, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/izdajem-stan-sumatovacka-ulica/5425647709894", "photos": ["img/m5425647709894_0.jpg", "img/m5425647709894_1.jpg", "img/m5425647709894_2.jpg", "img/m5425647709894_3.jpg", "img/m5425647709894_4.jpg", "img/m5425647709894_5.jpg"], "flags": ["oct"], "nice": 7, "desk": "desk", "bed": "double", "light": "bright", "best": 0, "lat": 44.794151, "lng": 20.483684, "n": 2}, {"id": "5425647592934", "title": "Люкс-студия с рабочим столом и камином", "area": "Стари-Град · Дорчол", "rooms": "Студия", "floor": "высокий первый из 4", "sleeps": "", "priceNote": "", "notes": "Студия с роскошным ремонтом в обновлённом старом доме, в двух шагах от Скадарлии. Окна во тихий двор. В объявлении упомянут письменный стол. 7 минут пешком до площади Республики. В объявлении говорится о договоре на год — стоит уточнить.", "feat": ["Кондиционер", "Камин", "Сад", "Интернет"], "vibe": "Гламурная чёрно-белая студия: люстры, хрустальные бра, картины; эффектно, но немного китч", "highlights": "Свежий ремонт, ниши с подсветкой, люстры, цельный чёрно-белый стиль", "concerns": "Фото только ночью; не видно кухни, ванной, кровати и окон", "price": 650, "extra": 0, "m2": 27, "dH": 1.71, "dM": 0.89, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/izdajem-salonsku-lux-garsonjeru-na-dorcolu/5425647592934", "photos": ["img/m5425647592934_0.jpg", "img/m5425647592934_1.jpg", "img/m5425647592934_2.jpg", "img/m5425647592934_3.jpg", "img/m5425647592934_4.jpg", "img/m5425647592934_5.jpg"], "flags": ["now", "year", "deskad"], "nice": 6, "desk": "unclear", "bed": "sofa-bed", "light": "medium", "best": 1, "lat": 44.819335, "lng": 20.467956, "n": 3}, {"id": "5425645609022", "title": "Светлая полуторка у рынка Каленич", "area": "Врачар · Каленич", "rooms": "1,5 комнаты", "floor": "5 из 6", "sleeps": "", "priceNote": "", "notes": "После ремонта, светлая, полностью меблирована, уличного шума не слышно. Гостиная, спальня, кухня со столовой зоной и терраса. Свободна с 29 сентября. С хозяином можно переписываться на английском.", "feat": ["Кондиционер", "Лифт", "Терраса", "Центральное отопление"], "vibe": "Светлая квартира после ремонта: вычурная люстра и мебель в духе «бабушкиного гламура»", "highlights": "Современная ванная в серой плитке, балкон со столиком, много света", "concerns": "Нет фото спальни, разномастная вычурная мебель, потёртый бетон на балконе", "price": 700, "extra": 0, "m2": 45, "dH": 0.85, "dM": 2.24, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/kalenic-vracar---excellent/5425645609022", "photos": ["img/m5425645609022_0.jpg", "img/m5425645609022_1.jpg", "img/m5425645609022_2.jpg", "img/m5425645609022_3.jpg", "img/m5425645609022_4.jpg", "img/m5425645609022_5.jpg"], "flags": ["sep29", "en"], "nice": 6, "desk": "table", "bed": "unclear", "light": "bright", "best": 4, "lat": 44.803279, "lng": 20.476864, "n": 4}, {"id": "5425647298887", "title": "Люкс-двушка в 100 м от Hilton", "area": "Врачар", "rooms": "2 комнаты", "floor": "1 из 4", "sleeps": "", "priceNote": "", "notes": "Тихо, дом довольно новый, центральное отопление. Можно с животными, курить разрешено. Можно въезжать сразу.", "feat": ["Кондиционер", "Лифт", "Центральное отопление"], "vibe": "Простая старая квартира: фактурные стены, устаревшая мебель, снято ночью", "highlights": "Отдельная спальня с деревянной двуспальной кроватью, паркет, большой шкаф", "concerns": "Ночные фото боком, нет кухни и ванной, «люкса» не видно", "price": 700, "extra": 0, "m2": 51, "dH": 0.11, "dM": 1.56, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/povoljnoizvanredan-strogi-centar-dvosobanc-cg/5425647298887", "photos": ["img/m5425647298887_0.jpg", "img/m5425647298887_1.jpg", "img/m5425647298887_2.jpg", "img/m5425647298887_3.jpg", "img/m5425647298887_4.jpg", "img/m5425647298887_5.jpg"], "flags": ["now"], "nice": 4, "desk": "table", "bed": "double", "light": "dark", "best": 1, "lat": 44.80489, "lng": 20.46541, "n": 11}, {"id": "5425635802989", "title": "Квартира в новом доме у Калемегдана", "area": "Стари-Град · Калемегдан", "rooms": "2 комнаты", "floor": "6 из 6", "sleeps": "", "priceNote": "", "notes": "Солнечная и очень тихая. До парка Калемегдан меньше 50 м, до Кнез-Михайловой — меньше 200 м. Посудомойка, стиральная машина, ванная после ремонта, отдельная спальня.", "feat": ["Кондиционер", "Лифт", "Посудомойка", "Стиральная машина"], "vibe": "Солнечная просторная мансарда в два уровня, паркет ёлочкой, но уставший ремонт 2000-х", "highlights": "Светлая мансарда, паркет ёлочкой, большой угловой диван, мансардное окно, кондиционер", "concerns": "Офисный подвесной потолок, старая жёлтая кухня, спальню так и не показали", "price": 700, "extra": 0, "m2": 48, "dH": 2.26, "dM": 0.6, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/stan-pored-kalemegdana-novija-gradnja-opremlj/5425635802989", "photos": ["img/m5425635802989_0.jpg", "img/m5425635802989_1.jpg", "img/m5425635802989_2.jpg", "img/m5425635802989_3.jpg", "img/m5425635802989_4.jpg", "img/m5425635802989_5.jpg"], "flags": ["now"], "nice": 5, "desk": "table", "bed": "unclear", "light": "bright", "best": 3, "lat": 44.822984, "lng": 20.456023, "n": 7}, {"id": "5425644710829", "title": "Милая мансарда 74 м² на Крунской", "area": "Врачар · Крунская", "rooms": "3 комнаты", "floor": "5 из 5 (мансарда)", "sleeps": "", "priceNote": "", "notes": "Мансарда после ремонта, с мебелью, на одной из самых красивых улиц Врачара, в 5 минутах от Hilton. Можно с животными. Можно въезжать сразу. В объявлении — только номер телефона.", "feat": ["Кондиционер", "Лифт", "Центральное отопление"], "vibe": "Необычная мансарда с характером: окна в крыше, цветные стены, уютно, но старовато", "highlights": "Три мансардных окна, паркет, просторные 74 м², милый эклектичный декор", "concerns": "Старая зелёная кухня, открытые трубы, нет фото спальни и ванной", "price": 850, "extra": 0, "m2": 74, "dH": 0.32, "dM": 1.64, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/sarmantno-namesteno-potkrovlje-u-krunskoj/5425644710829", "photos": ["img/m5425644710829_0.jpg", "img/m5425644710829_1.jpg", "img/m5425644710829_2.jpg", "img/m5425644710829_3.jpg", "img/m5425644710829_4.jpg"], "flags": ["now"], "nice": 5, "desk": "table", "bed": "unclear", "light": "medium", "best": 0, "lat": 44.805775, "lng": 20.469263, "n": 8}, {"id": "5425647728037", "title": "Двушка с люкс-ремонтом у парка Каленич", "area": "Врачар · Каленич", "rooms": "2 комнаты", "floor": "1 из 4", "sleeps": "", "priceNote": "", "notes": "Полный ремонт, современная мебель. Квартира сквозная: задняя часть выходит на тихий парк. Центральное отопление, очень низкие счета, оптоволоконный интернет. Рядом рынок Каленич и парк Чубура.", "feat": ["Кондиционер", "Центральное отопление", "Оптоволоконный интернет"], "vibe": "Милая стильная квартира на Врачаре: красивая спальня, гостиная — бюджетная IKEA", "highlights": "Мягкая двуспальная кровать, фреска с листьями, паркет ёлочкой, отдельная спальня", "concerns": "Нет фото кухни и ванной; бюджетная мебель; фото сильно обработаны", "price": 800, "extra": 0, "m2": 40, "dH": 1.11, "dM": 2.57, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/vracar-tomasa-jeza/5425647728037", "photos": ["img/m5425647728037_0.jpg", "img/m5425647728037_1.jpg", "img/m5425647728037_2.jpg", "img/m5425647728037_3.jpg", "img/m5425647728037_4.jpg"], "flags": [], "nice": 6, "desk": "table", "bed": "double", "light": "bright", "best": 3, "lat": 44.801045, "lng": 20.479562, "n": 5}, {"id": "5425635812820", "title": "Современные 45 м², стиралка и сушилка", "area": "Врачар · Бульвар", "rooms": "2 комнаты", "floor": "4 из 4", "sleeps": "", "priceNote": "", "notes": "Для одного человека или пары. Новый инверторный кондиционер, телевизор 55\", стиральная и сушильная машины, стеклянная душевая, ортопедический двуспальный матрас. Но: договор на 7 месяцев и депозит €1000. Фото 2020 года.", "feat": ["Инверторный кондиционер", "Стиральная + сушильная машина", "Двуспальная кровать"], "vibe": "Заставленная старая квартира пожилых хозяев, пёстрый декор и тёмная кухня", "highlights": "Кожаный угловой диван, паркет ёлочкой, кондиционер", "concerns": "Тёмная тесная старая кухня, пёстрый декор, старый кондиционер, спальни не видно", "price": 830, "extra": 70, "m2": 45, "dH": 1.21, "dM": 2.61, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/odmah-moderan-namesten-stan-na-vracaru/5425635812820", "photos": ["img/m5425635812820_0.jpg", "img/m5425635812820_1.jpg", "img/m5425635812820_2.jpg", "img/m5425635812820_3.jpg", "img/m5425635812820_4.jpg"], "flags": ["seven", "old"], "nice": 4, "desk": "table", "bed": "unclear", "light": "medium", "best": 2, "lat": 44.801418, "lng": 20.480949, "n": 13}, {"id": "5425636003104", "title": "Квартира с патио на Косанчичевом венце", "area": "Стари-Град · Косанчичев венац", "rooms": "2 спальни + гостиная", "floor": "первый из 3", "sleeps": "", "priceNote": "", "notes": "Свежий ремонт, потолки 3 м, огромные окна и солнечное мощёное патио. Посудомойка и стирально-сушильная машина. Старый город у крепости, 5 минут до вечеринки. Хозяин говорит по-английски, без комиссии, WhatsApp/Viber.", "feat": ["Посудомойка", "Стирально-сушильная машина", "Патио"], "vibe": "Необычный яркий ретро-полуподвал: свет ламп, забавные дизайнерские вещи, но похоже на пещеру", "highlights": "Две спальни, стулья в стиле Eames, шезлонг Ле Корбюзье, настоящий рабочий стол", "concerns": "Маленькие окна под потолком, серая плитка на полу, спорные цвета, ощущение подвала", "price": 850, "extra": 0, "m2": 50, "dH": 1.74, "dM": 0.37, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/no-fee-fully-furnished-junior-4/5425636003104", "photos": ["img/m5425636003104_0.jpg", "img/m5425636003104_1.jpg", "img/m5425636003104_2.jpg", "img/m5425636003104_3.jpg", "img/m5425636003104_4.jpg"], "flags": ["now", "en"], "nice": 5, "desk": "desk", "bed": "double", "light": "dark", "best": 3, "lat": 44.816397, "lng": 20.45256, "n": 9}, {"id": "5425644814492", "title": "Двухуровневый лофт, потолки 4,5 м", "area": "Стари-Град · Косанчичев венац", "rooms": "Два уровня, 1 спальня", "floor": "первый из 2", "sleeps": "", "priceNote": "", "notes": "Двухуровневый лофт после ремонта: потолки 4,5 м, большие окна с видом на Конак княгини Любицы. Посудомойка и стирально-сушильная машина. Хозяин предлагает его как место и для жизни, и для работы. Тот же англоговорящий хозяин, что и у квартиры с патио, без комиссии.", "feat": ["Посудомойка", "Стирально-сушильная машина", "Два уровня"], "vibe": "Полупустой двухуровневый вариант с IKEA: тёмная гостиная внизу, светлее спальня наверху", "highlights": "Двуспальная кровать наверху, светлое мансардное окно, самый центр", "concerns": "Два из пяти фото — стоковые виды достопримечательностей; потёртый диван, трещина в полу", "price": 750, "extra": 0, "m2": 40, "dH": 1.85, "dM": 0.36, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/no-fee-city-center-maisonette/5425644814492", "photos": ["img/m5425644814492_0.jpg", "img/m5425644814492_1.jpg", "img/m5425644814492_2.jpg", "img/m5425644814492_3.jpg", "img/m5425644814492_4.jpg"], "flags": ["now", "en"], "nice": 4, "desk": "unclear", "bed": "loft", "light": "medium", "best": 2, "lat": 44.817514, "lng": 20.4524, "n": 12}, {"id": "5425646628352", "title": "Дорчол: свежий ремонт и стоячий стол", "area": "Стари-Град · Дорчол", "rooms": "Спальня + гостиная", "floor": "4 из 5", "sleeps": "", "priceNote": "", "notes": "Полный ремонт, есть всё вплоть до мелкой техники. В спальне стоят электрический стол с регулировкой высоты и кресло Herman Miller. Счета очень низкие, сдаёт сам хозяин без комиссии, смотреть и заезжать можно с 1 октября.", "feat": ["Стоячий стол + Herman Miller", "Инверторный кондиционер", "Лифт до 3-го этажа"], "vibe": "Свежая квартира в оливковых и дубовых тонах: уютно, светло, как из Instagram", "highlights": "Новая зелёная кухня, реечная ТВ-стена, паркет, кондиционер, полки с подсветкой", "concerns": "Спальню и ванную не показали; на фото только маленький столик", "price": 900, "extra": 0, "m2": 43, "dH": 2.56, "dM": 0.93, "url": "https://www.halooglasi.com/nekretnine/izdavanje-stanova/moderan-kompletno-renoviran-stan-u-srcu-dorco/5425646628352", "photos": ["img/m5425646628352_0.jpg", "img/m5425646628352_1.jpg", "img/m5425646628352_2.jpg", "img/m5425646628352_3.jpg", "img/m5425646628352_4.jpg"], "flags": ["oct", "deskad"], "nice": 8, "desk": "table", "bed": "unclear", "light": "bright", "best": 0, "lat": 44.825986, "lng": 20.456502, "n": 1}];
+const SHORT = [{"id": "5425642999425", "title": "Новая квартира между Булеваром и Крунской", "area": "Врачар · Каленич", "rooms": "1 спальня", "floor": "", "sleeps": "2", "priceNote": "Цена обсуждается, если больше 5 дней", "notes": "По словам хозяина, квартира полностью отремонтирована и ещё ни разу не сдавалась. До рынка Каленич и бульвара несколько минут пешком.", "feat": ["Фен", "Стиральная машина", "Ванна", "Кондиционер", "Лифт", "Wi-Fi"], "vibe": "Старая квартира на Врачаре, наряженная свечами и просекко; под этим всё старенькое", "highlights": "Паркет ёлочкой, большой зеркальный шкаф, романтичная подача, центр Врачара", "concerns": "Старенькая кухня с электроплиткой, дешёвый табурет, нет фото ванной", "price": 40, "extra": 0, "m2": 34, "dH": 0.68, "dM": 2.18, "url": "https://www.halooglasi.com/odmor/stan-na-dan/stan-na-dan-u-centru-beograda-srcu-vracara/5425642999425", "photos": ["img/s5425642999425_0.jpg", "img/s5425642999425_1.jpg", "img/s5425642999425_2.jpg", "img/s5425642999425_3.jpg"], "flags": [], "nice": 4, "desk": "table", "bed": "double", "light": "dark", "best": 1}, {"id": "5425645029359", "title": "Stella Apartments на Кнез-Михайловой", "area": "Стари-Град · Кнез-Михайлова", "rooms": "Студия, кровать king-size", "floor": "", "sleeps": "2", "priceNote": "", "notes": "5 современных студий в пешеходной зоне, в 100 м от площади Республики, в каждой кровать king-size. У некоторых есть свой дворик. Место вечеринки прямо по соседству.", "feat": ["Фен", "Халат", "Стиральная машина", "Утюг", "Кондиционер", "Балкон / дворик"], "vibe": "Чистый гостиничный номер: белая кровать-боксспринг, ковролин, классический декор", "highlights": "Двуспальная кровать-боксспринг, настенный столик со стулом и розетками", "concerns": "Это гостиничный номер; нет фото кухни и окна; крошечный стол, ковролин, вычурный декор", "price": 40, "extra": 0, "m2": null, "dH": 1.61, "dM": 0.07, "url": "https://www.halooglasi.com/odmor/stan-na-dan/stella-apartmani-beograd-knez-mihajlova/5425645029359", "photos": ["img/s5425645029359_0.jpg", "img/s5425645029359_1.jpg", "img/s5425645029359_2.jpg", "img/s5425645029359_3.jpg"], "flags": [], "nice": 6, "desk": "desk", "bed": "double", "light": "medium", "best": 0}, {"id": "5425645739163", "title": "Kneginja: двушка с большим садом", "area": "Врачар · Южный бульвар", "rooms": "2 комнаты", "floor": "", "sleeps": "2–4", "priceNote": "", "notes": "Удобная двухкомнатная квартира с большим ухоженным садом в тихой части Врачара. Хозяин предлагает её парам.", "feat": ["Фен", "Ванна", "Стиральная машина", "Утюг", "Кондиционер", "Сад"], "vibe": "Очаровательный зелёный дворик, но спальня в устаревшем бабушкином стиле", "highlights": "Каменный дворик с деревом, гортензии, стол на улице, кондиционер", "concerns": "Старая резная кровать, шторы с рюшами; кухню и ванную не показали", "price": 40, "extra": 0, "m2": null, "dH": 1.55, "dM": 3.22, "url": "https://www.halooglasi.com/odmor/stan-na-dan/beograd-apartman-kneginja-stan-na-dan/5425645739163", "photos": ["img/s5425645739163_0.jpg", "img/s5425645739163_1.jpg", "img/s5425645739163_2.jpg", "img/s5425645739163_3.jpg"], "flags": [], "nice": 5, "desk": "unclear", "bed": "double", "light": "medium", "best": 0}, {"id": "5425645243948", "title": "Vračar Sweet Home, ремонт 2024", "area": "Врачар", "rooms": "1 спальня", "floor": "", "sleeps": "2", "priceNote": "Минимум 2 ночи", "notes": "Отдельная квартира с полным ремонтом 2024 года, тёплым полом и электрическими рольставнями.", "feat": ["Фен", "Посудомойка", "Стиральная машина", "Тёплый пол", "Балкон", "Парковка"], "vibe": "Свежая дизайнерская студия в белом и дубе, с деталями бутик-отеля", "highlights": "Дубовая мини-кухня с LED-подсветкой, ванная под мрамор, зеркало с подсветкой", "concerns": "Крошечная студия, кровати на фото нет, мало фото, постановочные и мутные", "price": 50, "extra": 0, "m2": null, "dH": 0.83, "dM": 2.51, "url": "https://www.halooglasi.com/odmor/stan-na-dan/beograd-apartman-vracar-sweet-home/5425645243948", "photos": ["img/s5425645243948_0.jpg", "img/s5425645243948_1.jpg", "img/s5425645243948_2.jpg", "img/s5425645243948_3.jpg"], "flags": [], "nice": 8, "desk": "unclear", "bed": "unclear", "light": "bright", "best": 0}, {"id": "5425646493615", "title": "Apartman Slavija с трансфером из аэропорта", "area": "Врачар · Славия", "rooms": "1 спальня", "floor": "", "sleeps": "2–3", "priceNote": "Цена обсуждается, если на несколько ночей", "notes": "5 минут до Hilton. По запросу хозяин встретит в аэропорту, это удобно при посадке в 03:00. Связь через Viber / WhatsApp.", "feat": ["Фен", "Утюг", "Кондиционер", "Бесплатная парковка"], "vibe": "Тёплая бежевая студия в скандинавском стиле: уютная, для свиданий, обставлена с любовью", "highlights": "Свежий ремонт, современная кухня, всё в одном стиле, кондиционер, чистый душ", "concerns": "Нет нормального стола, маленькая ванная, фото только вечерние, площадь неизвестна", "price": 50, "extra": 0, "m2": null, "dH": 0.36, "dM": 1.88, "url": "https://www.halooglasi.com/odmor/stan-na-dan/apartman-slavija/5425646493615", "photos": ["img/s5425646493615_0.jpg", "img/s5425646493615_1.jpg", "img/s5425646493615_2.jpg", "img/s5425646493615_3.jpg"], "flags": [], "nice": 8, "desk": "table", "bed": "double", "light": "medium", "best": 0}, {"id": "5425631591270", "title": "Квартира 35 м² у Скупщины", "area": "Стари-Град · Скупщина", "rooms": "1 спальня", "floor": "", "sleeps": "2", "priceNote": "", "notes": "Подходит и на пару дней, и надолго: спальня с двуспальной кроватью, кухня, постельное бельё и полотенца. Фото 2020 года.", "feat": ["Фен", "Ванна", "Стиральная машина", "Утюг", "Балкон", "Лифт"], "vibe": "Чистая уютная студия в гостиничном духе, с нормальной двуспальной кроватью, немного устаревшая", "highlights": "Настоящая двуспальная кровать, паркет, кондиционер, свежее бельё, центр у Скупщины", "concerns": "Шкаф не в тон, латунная тумба под ТВ, простая старая кухня", "price": 45, "extra": 0, "m2": 35, "dH": 0.6, "dM": 1.25, "url": "https://www.halooglasi.com/odmor/stan-na-dan/beograd-apartman-u-centru-grada-kod-skupstine/5425631591270", "photos": ["img/s5425631591270_0.jpg", "img/s5425631591270_1.jpg", "img/s5425631591270_2.jpg", "img/s5425631591270_3.jpg"], "flags": [], "nice": 5, "desk": "table", "bed": "double", "light": "medium", "best": 0}, {"id": "5425645063685", "title": "Cozy Haven возле Клинического центра", "area": "Савски-Венац", "rooms": "Гостиная + спальное место", "floor": "", "sleeps": "2", "priceNote": "−10% от 7 ночей · минимум 2 ночи", "notes": "Около 0,7 км до храма Святого Саввы, хорошо с общественным транспортом.", "feat": ["Фен", "Стиральная машина", "Утюг", "Кондиционер", "Парковка"], "vibe": "Уютная студия в стиле бохо-скандинавия с тёплым светом; ощущение гостиницы", "highlights": "Всё в одном стиле, кирпичная стена, бирюзовые кресла, картины, свежий ремонт", "concerns": "Кровать будто из двух сдвинутых; нет фото кухни и ванной; низкий потолочный короб", "price": 45, "extra": 0, "m2": null, "dH": 0.79, "dM": 1.83, "url": "https://www.halooglasi.com/odmor/stan-na-dan/apartman-u-blizini-klinickog-centra-sa-parkin/5425645063685", "photos": ["img/s5425645063685_0.jpg", "img/s5425645063685_1.jpg", "img/s5425645063685_2.jpg", "img/s5425645063685_3.jpg"], "flags": [], "nice": 7, "desk": "unclear", "bed": "double", "light": "medium", "best": 3}, {"id": "5425646543237", "title": "Marina: новая, люкс, Црвени-Крст", "area": "Врачар · Црвени-Крст", "rooms": "Спальня + гостиная", "floor": "", "sleeps": "2–4", "priceNote": "", "notes": "Только что открылась. Отдельная спальня с кроватью 180×200, в гостиной диван-кровать.", "feat": ["Фен", "Ванна", "Утюг", "Кондиционер", "Парковка во дворе"], "vibe": "Свежий ремонт, серая современная гостиная; первый этаж в простом доме", "highlights": "Новая плитка, серый диван и кресло, люстра-кольцо, дизайнерская дверь", "concerns": "Всего одно фото интерьера; первый этаж окнами на улицу; спальню не показали", "price": 55, "extra": 0, "m2": null, "dH": 1.5, "dM": 3.02, "url": "https://www.halooglasi.com/odmor/stan-na-dan/beograd-apartman/5425646543237", "photos": ["img/s5425646543237_0.jpg", "img/s5425646543237_1.jpg", "img/s5425646543237_2.jpg", "img/s5425646543237_3.jpg"], "flags": [], "nice": 6, "desk": "unclear", "bed": "unclear", "light": "medium", "best": 0}, {"id": "5425645035592", "title": "Студия 30 м² в центре", "area": "Стари-Град · Центр", "rooms": "Студия", "floor": "", "sleeps": "2", "priceNote": "Посуточно или дольше", "notes": "Полностью оборудованная студия, бельё и полотенца есть. Самый дешёвый приличный вариант, 5 минут до вечеринки.", "feat": ["Фен", "Утюг", "Центральное отопление", "Лифт", "Wi-Fi"], "vibe": "Аккуратная типовая бюджетная студия, тёмная мебель в тон, сильно обработанные фото", "highlights": "Настоящая двуспальная кровать, паркет ёлочкой, мебель цвета венге в одном стиле", "concerns": "Крошечная старая ванная, душ прямо у унитаза, без поддона", "price": 30, "extra": 0, "m2": 30, "dH": 1.87, "dM": 0.38, "url": "https://www.halooglasi.com/odmor/stan-na-dan/beograd-centar/5425645035592", "photos": ["img/s5425645035592_0.jpg", "img/s5425645035592_1.jpg", "img/s5425645035592_2.jpg", "img/s5425645035592_3.jpg"], "flags": [], "nice": 4, "desk": "table", "bed": "double", "light": "medium", "best": 1}, {"id": "5425635561361", "title": "Новые апартаменты на Сараевской", "area": "Савски-Венац", "rooms": "Апартаменты", "floor": "", "sleeps": "2–4", "priceNote": "€35 от 7 ночей, €40 за 1–7 ночей", "notes": "Заявлены как совсем новые апартаменты с новой мебелью. Фото 2020 года.", "feat": ["Фен", "Кондиционер", "Балкон", "Wi-Fi"], "vibe": "Свежая бело-бирюзовая студия после ремонта, аккуратная, как гостиничный номер", "highlights": "Двуспальная кровать с ящиками, новая душевая кабина, весёлые цвета", "concerns": "Маленькая студия, бюджетная мебель, старая батарея, работать только за столиком", "price": 35, "extra": 0, "m2": null, "dH": 1.15, "dM": 1.81, "url": "https://www.halooglasi.com/odmor/stan-na-dan/stan-na-dan-sarajevska-beograd-klinicki-centa/5425635561361", "photos": ["img/s5425635561361_0.jpg", "img/s5425635561361_1.jpg", "img/s5425635561361_2.jpg", "img/s5425635561361_3.jpg"], "flags": [], "nice": 7, "desk": "table", "bed": "double", "light": "bright", "best": 2}];
+const PICKS = [{"label": "Первые ночи", "id": "5425646493615", "why": "5 минут до Hilton, двуспальная кровать, фен. Хозяин может встретить в аэропорту — удобно, ведь прилёт в 3 ночи."}, {"label": "Самая красивая на месяц", "id": "5425646628352", "why": "Лучшая по фото из всех. В спальне — электрический стол с регулировкой высоты и кресло Herman Miller. Свободна с 1 октября."}, {"label": "Лучшая по цене", "id": "5425647709894", "why": "Новый дом, светло, есть компьютерный стол и двуспальная кровать. Свободна с 1 октября — посмотрим 29–30-го."}, {"label": "Уютная спальня у парка", "id": "5425647728037", "why": "Свежий ремонт, отдельная спальня с мягкой кроватью, окна сзади выходят на тихий парк у рынка Каленич."}, {"label": "Посуточно — спросим цену за месяц", "id": "5425645243948", "why": "Ремонт 2024 года: посудомойка, тёплый пол, фен. За целый месяц хозяева часто дают хорошую скидку."}];
+const H = {lat:44.804, lng:20.466083}, M = {lat:44.8176, lng:20.4569};
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const km = v => v.toFixed(1).replace('.', ',');
+const walk = v => Math.max(1, Math.round(v * 15));
+const ALL = {}; MONTHLY.forEach(x=>ALL[x.id]={...x,kind:'m'}); SHORT.forEach(x=>ALL[x.id]={...x,kind:'s'});
+
+// favourites (kept on this phone only)
+let FAV = [];
+try { FAV = JSON.parse(localStorage.getItem('bg-flats-fav') || '[]').filter(id => ALL[id]); } catch(_) { FAV = []; }
+const saveFav = () => { try { localStorage.setItem('bg-flats-fav', JSON.stringify(FAV)); } catch(_){} };
+const isFav = id => FAV.includes(id);
+
+const WORD = n => n>=8?'очень красиво':n>=7?'красиво':n>=6?'неплохо':n>=5?'просто':'так себе';
+const DESK = {desk:['good','Есть рабочий стол'], table:['','Только обеденный стол'], none:['bad','Стола нет'], unclear:['','Стол не видно на фото']};
+const BED = {double:'Двуспальная кровать','sofa-bed':'Диван-кровать',single:'Односпальная кровать',loft:'Кровать наверху',unclear:'Кровать не показана'};
+const LIGHT = {bright:'Светлая',medium:'Средне светлая',dark:'Темноватая'};
+const FLAG = {now:['good','Можно въехать сразу'], oct:['warn','Свободна с 1 октября'], sep29:['warn','Свободна с 29 сентября'], year:['warn','Просят договор на год'], seven:['bad','Договор на 7 месяцев'], en:['','Хозяин пишет по-английски'], deskad:['good','Стол указан в объявлении'], old:['bad','Фото 2020 года'], old22:['bad','Фото 2022 года'], nego:['','Цена обсуждается']};
+const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-10-9.3C.4 8.5 2.2 4.5 6 4.5c2.2 0 3.6 1.2 4.4 2.4h.2c.8-1.2 2.2-2.4 4.4-2.4 3.8 0 5.6 4 4 7.2C19.5 16.4 12 21 12 21z"/></svg>';
+
+function order(photos, best){ return (best>0 && best<photos.length) ? [photos[best], ...photos.filter((_,i)=>i!==best)] : photos; }
+function gallery(x){
+  const ph = order(x.photos, x.best);
+  const imgs = ph.map((p,i)=>`<img src="${esc(p)}" alt="${esc(x.title)}, фото ${i+1}" loading="${i?'lazy':'eager'}" decoding="async" data-i="${i}">`).join('');
+  const dots = ph.length>1 ? `<div class="dots">${ph.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div>` : '';
+  const sc = x.nice ? `<span class="score ${x.nice>=7?'hi':''}"><b>${x.nice}</b>/10 · ${WORD(x.nice)}</span>` : '';
+  return `<div class="gal" data-photos='${esc(JSON.stringify(ph))}'>${sc}<button type="button" class="heart" data-id="${x.id}" aria-pressed="${isFav(x.id)}" aria-label="Нравится">${HEART}</button><div class="strip">${imgs}</div>${dots}</div>`;
+}
+function fitChips(x){
+  const d = DESK[x.desk] || DESK.unclear;
+  const out = [`<span class="chip ${d[0]}">${d[1]}</span>`];
+  if(x.bed) out.push(`<span class="chip">${BED[x.bed]||''}</span>`);
+  if(x.light) out.push(`<span class="chip">${LIGHT[x.light]||''}</span>`);
+  return out.join('');
+}
+function card(x){
+  const flags = (x.flags||[]).map(f=>FLAG[f]?`<span class="chip ${FLAG[f][0]}">${FLAG[f][1]}</span>`:'').join('');
+  const isM = x.kind==='m';
+  const total = x.price + (x.extra||0);
+  const priceLine = isM
+    ? `<b>€${x.price}</b><span>в месяц${x.extra?` + €${x.extra} коммуналка`:''}</span>`
+    : `<b>€${x.price}</b><span>за ночь${x.priceNote?' · '+esc(x.priceNote):''}</span>`;
+  const hair = isM ? '<span class="chip">Фен — уточним</span>' : '<span class="chip good">Фен есть</span>';
+  return `<article class="card" id="c-${x.id}">
+    ${gallery(x)}
+    <div class="body">
+      <div class="area">${x.n?`№${x.n} · `:''}${esc(x.area)}</div>
+      <h3>${esc(x.title)}</h3>
+      <div class="price">${priceLine}</div>
+      <div class="chips">${fitChips(x)}${hair}${flags}</div>
+      ${x.vibe?`<p class="vibe">${esc(x.vibe)}</p>`:''}
+      <dl class="facts">
+        <div><dt>Площадь</dt><dd>${x.m2? x.m2+' м²':'—'}${x.rooms?' · '+esc(x.rooms):''}</dd></div>
+        <div><dt>${isM?'Этаж':'Спальных мест'}</dt><dd>${esc(isM?(x.floor||'—'):(x.sleeps||'—'))}</dd></div>
+        <div><dt>До Hilton</dt><dd>${km(x.dH)} км · ~${walk(x.dH)} мин</dd></div>
+        <div><dt>До Mama Shelter</dt><dd>${km(x.dM)} км · ~${walk(x.dM)} мин</dd></div>
+      </dl>
+      <div class="pc">${x.highlights?`<div class="p">${esc(x.highlights)}</div>`:''}${x.concerns?`<div class="c">${esc(x.concerns)}</div>`:''}</div>
+      ${x.notes?`<p class="notes">${esc(x.notes)}</p>`:''}
+      ${x.feat&&x.feat.length?`<div class="feat">${x.feat.map(esc).join(' · ')}</div>`:''}
+      <a class="go" href="${esc(x.url)}" target="_blank" rel="noopener">Открыть объявление ↗</a>
+    </div></article>`;
+}
+function pickCard(p){
+  const x = ALL[p.id];
+  const ph = order(x.photos, x.best)[0];
+  const unit = x.kind==='m' ? 'в месяц' : 'за ночь';
+  return `<article class="pick">
+    <div class="ph"><img src="${esc(ph)}" alt="${esc(x.title)}" loading="lazy">${x.nice?`<span class="score ${x.nice>=7?'hi':''}"><b>${x.nice}</b>/10 · ${WORD(x.nice)}</span>`:''}<button type="button" class="heart" data-id="${x.id}" aria-pressed="${isFav(x.id)}" aria-label="Нравится">${HEART}</button></div>
+    <div class="pb"><span class="lab">${esc(p.label)}</span><h3>${esc(x.title)}</h3>
+      <div class="price"><b>€${x.price}</b><span>${unit} · ${km(x.dH)} км до Hilton</span></div>
+      <p>${esc(p.why)}</p>
+      <a class="go ghost" href="#c-${x.id}" data-jump="${x.id}">Подробнее</a></div>
+  </article>`;
+}
+
+// ---- render ----
+document.getElementById('rail').innerHTML = PICKS.map(pickCard).join('');
+let sortKey='nice', fDesk=false, fFav=false;
+function renderList(){
+  let L = MONTHLY.map(x=>ALL[x.id]);
+  if(fDesk) L = L.filter(x=>x.desk==='desk' || (x.flags||[]).includes('deskad'));
+  if(fFav) L = L.filter(x=>isFav(x.id));
+  const tot = x=>x.price+(x.extra||0);
+  L.sort((a,b)=> sortKey==='nice' ? (b.nice-a.nice)||(tot(a)-tot(b)) : sortKey==='price' ? (tot(a)-tot(b))||(b.nice-a.nice) : a.dH-b.dH);
+  const el = document.getElementById('list');
+  el.innerHTML = L.length ? L.map(card).join('') : `<div class="tip"><b>${fFav?'Пока ничего не выбрано':'Нет квартир с такими фильтрами'}</b><span>${fFav?'Нажми ♥ на квартирах, которые нравятся.':'Сними один из фильтров.'}</span></div>`;
+  document.getElementById('count').textContent = `${L.length} из ${MONTHLY.length} квартир`;
+  wire(el);
+}
+function renderShort(){
+  const L = SHORT.map(x=>ALL[x.id]).sort((a,b)=>(b.nice-a.nice)||(a.price-b.price));
+  const el = document.getElementById('slist'); el.innerHTML = L.map(card).join(''); wire(el);
+}
+function wire(root){
+  root.querySelectorAll('.gal').forEach(g=>{
+    const strip=g.querySelector('.strip'), dots=[...g.querySelectorAll('.dots i')];
+    if(dots.length) strip.addEventListener('scroll',()=>{ const i=Math.round(strip.scrollLeft/strip.clientWidth); dots.forEach((d,k)=>d.classList.toggle('on',k===i)); },{passive:true});
+    strip.querySelectorAll('img').forEach(img=>img.addEventListener('click',()=>openLB(JSON.parse(g.dataset.photos), +img.dataset.i)));
+  });
+}
+document.querySelectorAll('.controls [data-k]').forEach(b=>b.addEventListener('click',()=>{
+  sortKey=b.dataset.k; document.querySelectorAll('.controls [data-k]').forEach(o=>o.setAttribute('aria-pressed',String(o===b))); renderList();
+}));
+document.getElementById('f-desk').addEventListener('click',e=>{fDesk=!fDesk;e.currentTarget.setAttribute('aria-pressed',String(fDesk));renderList();});
+document.getElementById('f-fav').addEventListener('click',e=>{fFav=!fFav;e.currentTarget.setAttribute('aria-pressed',String(fFav));renderList();});
+
+// hearts (delegated)
+document.addEventListener('click',e=>{
+  const h = e.target.closest('.heart'); if(!h) return;
+  e.preventDefault(); e.stopPropagation();
+  const id = h.dataset.id;
+  FAV = isFav(id) ? FAV.filter(x=>x!==id) : [...FAV, id];
+  saveFav();
+  document.querySelectorAll(`.heart[data-id="${id}"]`).forEach(b=>b.setAttribute('aria-pressed',String(isFav(id))));
+  if(fFav) renderList();
+  updateFav();
+});
+document.addEventListener('click',e=>{
+  const a = e.target.closest('[data-jump]'); if(!a) return;
+  e.preventDefault();
+  const c = document.getElementById('c-'+a.dataset.jump); if(!c) return;
+  c.scrollIntoView({behavior:'smooth',block:'start'}); c.classList.add('flash'); setTimeout(()=>c.classList.remove('flash'),1500);
+});
+
+// ---- favourites bar + sheet ----
+const plural = n => n%10===1&&n%100!==11 ? 'квартира' : (n%10>=2&&n%10<=4&&(n%100<10||n%100>=20)) ? 'квартиры' : 'квартир';
+function updateFav(){
+  const bar=document.getElementById('favbar');
+  bar.hidden = FAV.length===0;
+  document.getElementById('favn').textContent = `♥ ${FAV.length} ${plural(FAV.length)}`;
+  document.querySelectorAll('.pin').forEach(p=>p.classList.toggle('fav',isFav(p.dataset.id)));
+}
+function sendText(){
+  const lines = FAV.map((id,i)=>{ const x=ALL[id]; return `${i+1}. ${x.title} — €${x.price} ${x.kind==='m'?'в месяц':'за ночь'}, ${x.area}\n${x.url}`; });
+  return `Мне нравятся эти квартиры в Белграде:\n\n${lines.join('\n\n')}`;
+}
+function openSheet(){
+  document.getElementById('favlist').innerHTML = FAV.map(id=>{const x=ALL[id]; return `<li><b>${esc(x.title)}</b><br><span>€${x.price} ${x.kind==='m'?'в месяц':'за ночь'} · ${esc(x.area)}</span></li>`;}).join('');
+  const t = sendText();
+  document.getElementById('sendtext').value = t;
+  const first = ALL[FAV[0]] ? ALL[FAV[0]].url : '';
+  document.getElementById('tg').href = 'https://t.me/share/url?url='+encodeURIComponent(first)+'&text='+encodeURIComponent(t);
+  document.getElementById('wa').href = 'https://wa.me/?text='+encodeURIComponent(t);
+  document.getElementById('sheet').hidden = false;
+}
+document.getElementById('open-send').addEventListener('click',openSheet);
+document.getElementById('close-send').addEventListener('click',()=>document.getElementById('sheet').hidden=true);
+document.getElementById('sheet').addEventListener('click',e=>{ if(e.target.id==='sheet') e.currentTarget.hidden=true; });
+document.getElementById('copy').addEventListener('click',async e=>{
+  const b=e.currentTarget, ta=document.getElementById('sendtext');
+  try{ await navigator.clipboard.writeText(ta.value); b.textContent='Скопировано'; }
+  catch(_){ ta.focus(); ta.select(); ta.setSelectionRange(0, ta.value.length); b.textContent='Текст выделен — нажми «Скопировать»'; }
+  setTimeout(()=>b.textContent='Скопировать текст',2200);
+});
+
+// ---- lightbox ----
+const lb=document.getElementById('lb'), lbs=document.getElementById('lbs'), lbc=document.getElementById('lbc');
+function openLB(photos, i){
+  lbs.innerHTML = photos.map((p,k)=>`<img src="${esc(p)}" alt="Фото ${k+1}">`).join('');
+  lb.hidden=false; document.body.style.overflow='hidden';
+  requestAnimationFrame(()=>{ lbs.scrollLeft = i*lbs.clientWidth; lbc.textContent=`${i+1} / ${photos.length}`; });
+  lbs.onscroll = ()=>{ lbc.textContent = `${Math.round(lbs.scrollLeft/lbs.clientWidth)+1} / ${photos.length}`; };
+}
+function closeLB(){ lb.hidden=true; document.body.style.overflow=''; lbs.innerHTML=''; }
+document.getElementById('lbx').addEventListener('click',closeLB);
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ if(!lb.hidden) closeLB(); document.getElementById('sheet').hidden=true; } });
+
+// ---- map ----
+(function(){
+  const svg=document.getElementById('svgmap'), W=340, Hh=360, PAD=28;
+  const pts = MONTHLY.map(x=>[x.lat,x.lng]).concat([[H.lat,H.lng],[M.lat,M.lng]]);
+  const la0=Math.min(...pts.map(p=>p[0])), la1=Math.max(...pts.map(p=>p[0])), lo0=Math.min(...pts.map(p=>p[1])), lo1=Math.max(...pts.map(p=>p[1]));
+  const kx=Math.cos(44.807*Math.PI/180), sx=(lo1-lo0)*kx, sy=la1-la0, sc=Math.min((W-2*PAD)/sx,(Hh-2*PAD)/sy);
+  const ox=(W-sx*sc)/2, oy=(Hh-sy*sc)/2, X=l=>ox+(l-lo0)*kx*sc, Y=l=>oy+(la1-l)*sc, kmPx=sc/111.32;
+  const NS='http://www.w3.org/2000/svg', el=(t,a,p=svg)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e;};
+  [1,2,3].forEach(k=>{ el('circle',{cx:X(H.lng),cy:Y(H.lat),r:k*kmPx,fill:'none',stroke:'var(--map-ring)','stroke-width':1.2,'stroke-dasharray':'3 5'}); const t=el('text',{x:X(H.lng)+k*kmPx*.707+3,y:Y(H.lat)+k*kmPx*.707+10,'font-size':9.5,'font-family':'var(--body)',fill:'var(--muted)'}); t.textContent=k+' км'; });
+  [['Славия',44.8024,20.4666],['пл. Республики',44.8163,20.4602],['Храм Св. Саввы',44.7981,20.4686],['Калемегдан',44.8233,20.4506],['Скадарлия',44.8177,20.4661],['Каленич',44.8026,20.4763]].forEach(([n,a,b])=>{ const x=X(b),y=Y(a); if(x<6||x>W-40||y<10||y>Hh-6) return; el('circle',{cx:x,cy:y,r:2,fill:'var(--muted)'}); const t=el('text',{x:x+5,y:y+3.5,'font-size':10,'font-family':'var(--body)',fill:'var(--muted)'}); t.textContent=n; });
+  el('circle',{cx:X(H.lng),cy:Y(H.lat),r:7.5,fill:'var(--hilton)'}); let t=el('text',{x:X(H.lng)+11,y:Y(H.lat)+4,'font-size':12,'font-weight':700,'font-family':'var(--body)',fill:'var(--hilton)'}); t.textContent='Hilton';
+  el('circle',{cx:X(M.lng),cy:Y(M.lat),r:6.5,fill:'var(--party)'}); t=el('text',{x:X(M.lng)+10,y:Y(M.lat)-7,'font-size':12,'font-weight':700,'font-family':'var(--body)',fill:'var(--party)'}); t.textContent='Mama Shelter';
+  [...MONTHLY].sort((a,b)=>b.n-a.n).forEach(x=>{
+    const g=el('g',{class:'pin'+(isFav(x.id)?' fav':''),tabindex:0,role:'button','data-id':x.id,'aria-label':`№${x.n}: ${x.title}, €${x.price}`});
+    el('circle',{cx:X(x.lng),cy:Y(x.lat),r:10},g); const tt=el('text',{x:X(x.lng),y:Y(x.lat)},g); tt.textContent=x.n;
+    const go=()=>{ if(fDesk||fFav){ fDesk=fFav=false; document.getElementById('f-desk').setAttribute('aria-pressed','false'); document.getElementById('f-fav').setAttribute('aria-pressed','false'); renderList(); } const c=document.getElementById('c-'+x.id); if(c){ c.scrollIntoView({behavior:'smooth',block:'start'}); c.classList.add('flash'); setTimeout(()=>c.classList.remove('flash'),1500);} };
+    g.addEventListener('click',go); g.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+  });
+})();
+
+renderList(); renderShort(); updateFav();
+</script>
+
+</body>
+</html>
